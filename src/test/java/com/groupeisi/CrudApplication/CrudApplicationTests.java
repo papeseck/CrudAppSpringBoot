@@ -17,7 +17,7 @@ class CrudApplicationTests {
 
 	@Test
 	void contextLoads() {
-		// Assurez-vous que le contexte Spring se charge correctement
+
 	}
 
 	@Test
@@ -29,13 +29,13 @@ class CrudApplicationTests {
 		userEntity.setAdresse("123 Main Street");
 		userEntity.setTelephone("123-456-7890");
 
-		// Sauvegardez l'utilisateur dans la base de données
+
 		userEntityRepository.save(userEntity);
 
-		// Récupérez l'utilisateur par ID depuis la base de données
+
 		UserEntity savedUser = userEntityRepository.findById(userEntity.getId()).orElse(null);
 
-		// Assurez-vous que l'utilisateur est sauvegardé et que les propriétés sont correctes
+
 		assertNotNull(savedUser);
 		assertEquals(userEntity.getPrenom(), savedUser.getPrenom());
 		assertEquals(userEntity.getNom(), savedUser.getNom());
@@ -43,5 +43,5 @@ class CrudApplicationTests {
 		assertEquals(userEntity.getTelephone(), savedUser.getTelephone());
 	}
 
-	// Ajoutez d'autres méthodes de test pour les opérations CRUD (update, delete, findAll, etc.)
+
 }
