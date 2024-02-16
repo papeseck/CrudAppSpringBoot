@@ -32,7 +32,7 @@ Assurez-vous de configurer les paramètres de la base de données dans le fichie
 ## Comment Exécuter Localement
 
 1. Clonez le dépôt: `git clone https://github.com/papeseck/CrudAppSpringBoot.git`
-2. Allez dans le répertoire du projet: `cd votre-projet`
+2. Allez dans le répertoire du projet: `cd CrudAppSpringBoot`
 3. Exécutez l'application: `mvn spring-boot:run`
 
 L'application sera accessible à l'adresse http://localhost:8080.
