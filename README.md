@@ -1,4 +1,4 @@
-# Mon Projet Spring Boot avec CI/CD et Docker
+# Mon Projet Spring Boot CRUD avec CI/CD et Docker
 
 Ce projet est une application Spring Boot pour faire un CRUD, intégré avec GitHub Actions pour l'intégration continue (CI) et le déploiement continu (CD) avec Docker Hub.
 
