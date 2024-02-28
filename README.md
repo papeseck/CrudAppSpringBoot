@@ -49,6 +49,6 @@ docker build -t <YOUR_DOCKER_USERNAME>/dockervolume-backend:2.0 .
 
 
 ##  Push de l'Image sur Docker Hub
-docker login -u <YOUR_DOCKER_USERNAME> -p <YOUR_DOCKER_PASSWORD>
+docker login -u <YOUR_DOCKER_USERNAME> -p <YOUR_DOCKER_TOKEN>
 docker push <YOUR_DOCKER_USERNAME>/dockervolume-backend:2.0
 
