@@ -6,6 +6,6 @@ EXPOSE 8080
 
 RUN mkdir -p /app/data
 
-ADD docker/CrudApplication-0.0.1-SNAPSHOT.jar CrudApplication-0.0.1-SNAPSHOT.jar
+ADD target/CrudApplication-0.0.1-SNAPSHOT.jar /app/CrudApplication-0.0.1-SNAPSHOT.jar
 
-ENTRYPOINT ["java", "-jar", "CrudApplication-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "/app/CrudApplication-0.0.1-SNAPSHOT.jar"]

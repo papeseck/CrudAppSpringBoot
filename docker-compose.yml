@@ -14,7 +14,8 @@ services:
     environment:
       directoryDatas: /app/data/
     volumes:
-      - ./datas:/app/data
+      - ./target:/app
+
 
 volumes:
   datas:
