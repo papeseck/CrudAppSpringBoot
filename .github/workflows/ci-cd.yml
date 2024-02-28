@@ -12,8 +12,6 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v3
-      - name: Build Maven project
-        run: mvn clean install
       - name: Build docker images
         run: docker compose build
       - name: Log in to Docker Hub
