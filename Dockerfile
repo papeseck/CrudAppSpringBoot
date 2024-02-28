@@ -4,8 +4,8 @@ LABEL maintainer="Pape seck diabel1208@gmail.com"
 
 EXPOSE 8080
 
-RUN mkdir -p /app/data
+WORKDIR /app
 
-ADD target/CrudApplication-0.0.1-SNAPSHOT.jar /app/CrudApplication-0.0.1-SNAPSHOT.jar
+COPY target/CrudApplication-0.0.1-SNAPSHOT.jar app.jar
 
-ENTRYPOINT ["java", "-jar", "/app/CrudApplication-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
