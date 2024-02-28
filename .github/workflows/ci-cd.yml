@@ -12,11 +12,13 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v3
+      - name: Build Maven project
+        run: mvn clean install
       - name: Build docker images
         run: docker compose build
-      - name: log to docker hub
+      - name: Log in to Docker Hub
         run: docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_TOKEN }}
-      - name: tag image
+      - name: Tag image
         run: docker tag dockervolume-backend:1.0 diabel/dockervolume-backend:2.0
-      - name: push to docker hub tests
+      - name: Push to Docker Hub
         run: docker push diabel/dockervolume-backend:2.0
