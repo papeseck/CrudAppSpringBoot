@@ -1,4 +1,4 @@
-name: build and push a  docker image with docker compose into docker hub
+name: build and push a docker image with docker compose into docker hub
 
 on:
   push:
