@@ -6,6 +6,6 @@ EXPOSE 8080
 
 WORKDIR /app
 
-COPY target/CrudApplication-0.0.1-SNAPSHOT.jar app.jar
+COPY target/CrudApplication-3.2.2.jar app.jar
 
 ENTRYPOINT ["java", "-jar", "app.jar"]

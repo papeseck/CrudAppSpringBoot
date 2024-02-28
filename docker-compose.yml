@@ -2,7 +2,7 @@ version: '3'
 
 services:
   spring-app:
-    image: diabel/ockervolume-backend:2.0
+    image: diabel/dockervolume-backend:2.0
     ports:
       - "8080:8080"
     environment:
