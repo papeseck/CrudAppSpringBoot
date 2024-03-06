@@ -37,6 +37,7 @@ jobs:
           username: ${{ secrets.DOCKER_USER }}
           password: ${{ secrets.DOCKER_TOKEN }}
 
+
       - name: Build and push Docker image
         run: |
           docker build -t diabel/dockervolume-backend:2.0 .
