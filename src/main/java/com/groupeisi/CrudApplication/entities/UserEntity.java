@@ -1,6 +1,4 @@
 package com.groupeisi.CrudApplication.entities;
-
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,4 +15,5 @@ public class UserEntity {
     private String nom;
     private String adresse;
     private String telephone;
+
 }

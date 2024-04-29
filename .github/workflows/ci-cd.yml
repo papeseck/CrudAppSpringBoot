@@ -41,7 +41,7 @@ jobs:
       - name: Build and push Docker image
         run: |
           docker build -t diabel/dockervolume-backend:2.0 .
-          docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_TOKEN }}
+          docker login -u ${{secrets.DOCKER_USER}} -p ${{secrets.DOCKER_TOKEN}}
           docker push diabel/dockervolume-backend:2.0
         env:
           DOCKER_USER: ${{ secrets.DOCKER_USER }}
